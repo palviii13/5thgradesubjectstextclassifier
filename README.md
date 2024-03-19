@@ -47,9 +47,11 @@ Data Preparation: First,  load and preprocess the text data, including cleaning 
 
 Model Training (Teacher Model): Trained a larger teacher model using the Support Vector Machine (SVM) algorithm with a linear kernel. This model served as the baseline for comparison with accuracy 0.967741935483871. After fine-tuning the accuracy is 0.937981981981982.
 
-Knowledge Distillation: Next step is to generate soft targets (probabilities) from the teacher model's predictions for the training data. Then a smaller student model is trained using these soft targets as labels. Now accuracy is coming to be 1.0. This is occuring because the dataset is limited (464 records).
+Knowledge Distillation: Next step is to generate soft targets (probabilities) from the teacher model's predictions for the training data. Then a smaller student model is trained using these soft targets as labels. Now accuracy is coming to be 0.978494623655914.
 
-Model Evaluation: There was a model reduction of 0.3% observed.
+Model Evaluation: Size of the teacher model: 111733 bytes
+Size of the student model: 111333 bytes
+Percentage reduction achieved: 0.35799629473834943 %
 
 
 
